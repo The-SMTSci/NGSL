@@ -1,0 +1,635 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Handy Queries &mdash; NGSL Small Telescope Spectral References 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Astrophysics Crib Sheet" href="Astrophysics.html" />
+    <link rel="prev" title="NGSL Small Telescope Spectral Reference Resources License" href="license.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> NGSL Small Telescope Spectral References
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="README.html">README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">NGSL Small Telescope Spectral Reference Resources License</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Handy Queries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#given">Given</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-select-statement">Example SELECT statement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#simbad">SIMBAD</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Astrophysics.html">Astrophysics Crib Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">NGSL Small Telescope Spectral References</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Handy Queries</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/queries.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="handy-queries">
+<h1>Handy Queries<a class="headerlink" href="#handy-queries" title="Permalink to this headline">¶</a></h1>
+<p>This project is proceeding from two points of view:</p>
+<ol class="arabic simple">
+<li><p>Integrate the spectral libraries from astronomical projects.</p></li>
+<li><p>Take in spectra from large and small telescope programs.</p></li>
+</ol>
+<div class="section" id="given">
+<h2>Given<a class="headerlink" href="#given" title="Permalink to this headline">¶</a></h2>
+<p>The observing plan as star names. The names were matched to
+RA/DEC via TOPCAT and a SIMBAD query using the <strong>ident</strong> table
+to get the <strong>oidref = oid</strong>, then the <strong>main</strong> table to get
+the RA/DEC and other related information. Figure “Target list”
+shows the cluster of targets.</p>
+<div class="figure align-default" id="id1">
+<span id="rawobs"></span><a class="reference internal image-reference" href="_images/RawTony.png"><img alt="_images/RawTony.png" src="_images/RawTony.png" style="width: 735.2px; height: 535.2px;" /></a>
+<p class="caption"><span class="caption-text">Target list for 5 May, 2020 England.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>The first letter in FITS is flexible, and to that end it is necessary
+to bring in the standard star <strong>FITS</strong> files headers. The vocabulary
+of the originating observatories and small telescope observers
+differ. Databases require exact matches, and to these ends require
+a process to assure data integrity and referential integrity. The
+astrometric positions are not precise, and ‘neighborhood’ (cone)
+are required. Target names have various assumptions built in: e.g.:
+occasional use of two spaces rather than one. While the brain
+can accommodate the difference – machines trip over the missteps.</p>
+<p>Astropy was used to open files, iterate over one or more HDUs (Header
+Data Unit) consists of <strong>‘CARDS’</strong> with a keyword, value and optional
+comment. The HDU is scanned and converted into a Python dictionary by
+the ‘fits2psqlraw’ python tool. The JSON keyword is the FITS keyword,
+the JSON value field is an embedded dictionary with the ‘value’ and
+‘comment’ part. The ‘fits2psqlraw’ python tool produces output to
+‘stdout’ (redirect to a file) and is loaded into PostgreSQL as a ‘raw’
+file. The ‘raw’ file can be accessed (think Materialized View) to
+transliterate the observatory into the database’s vocabulary.</p>
+</div>
+<div class="section" id="example-select-statement">
+<h2>Example SELECT statement<a class="headerlink" href="#example-select-statement" title="Permalink to this headline">¶</a></h2>
+<p>Here external functions <strong>r2s</strong> and <strong>d2s</strong> are used to convert decimal
+RA and decimal Dec to traditional sexigesimal notation.  The
+<em>quote_literal</em> places tick-marks around the text for clarity
+and possible use later on in the process. The header is
+declared to be a <strong>jsonb</strong> (binary json) field; the <strong>-&gt;</strong>
+operator brings out fields and the <strong>-&gt;&gt;</strong> operator renders
+them into text form.</p>
+<p>Note: This is from the NGSL original files, where the “OBJECT”
+is called “TARGOBJ” etc.</p>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">select</span> <span class="n">target</span><span class="p">,</span> <span class="n">r2s</span><span class="p">(</span><span class="n">ora</span><span class="p">)</span> <span class="k">as</span> <span class="s s-Name">&quot;RA&quot;</span><span class="p">,</span> <span class="n">d2s</span><span class="p">(</span><span class="n">odec</span><span class="p">)</span> <span class="k">as</span> <span class="s s-Name">&quot;DEC&quot;</span><span class="p">,</span>
+       <span class="n">quote_literal</span><span class="p">(</span><span class="k">header</span> <span class="o">-&gt;</span> <span class="s1">&#39;HDU[0]&#39;</span> <span class="o">-&gt;</span> <span class="s1">&#39;GRATING&#39;</span> <span class="o">-&gt;&gt;</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="s s-Name">&quot;Grating&quot;</span><span class="p">,</span>
+       <span class="n">quote_literal</span><span class="p">(</span><span class="k">header</span> <span class="o">-&gt;</span> <span class="s1">&#39;HDU[0]&#39;</span> <span class="o">-&gt;</span> <span class="s1">&#39;SPECTYPE&#39;</span> <span class="o">-&gt;&gt;</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="s s-Name">&quot;SpType&quot;</span>
+<span class="k">from</span> <span class="n">rawngslheaders</span>
+<span class="gp">where header -&gt;</span> <span class="s1">&#39;HDU[0]&#39;</span> <span class="o">-&gt;</span> <span class="s1">&#39;SPECTYPE&#39;</span> <span class="o">-&gt;&gt;</span> <span class="s1">&#39;value&#39;</span> <span class="o">=</span> <span class="s1">&#39;composite&#39;</span>
+<span class="k">order</span> <span class="k">by</span> <span class="n">ora</span><span class="o">::</span><span class="nb">integer</span><span class="o">/</span><span class="mf">15</span><span class="p">,</span><span class="n">odec</span>
+<span class="p">;</span>
+</pre></div>
+</td></tr></table></div>
+<p>A Python function useful to pretty print JSON entries:</p>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">CREATE</span> <span class="k">FUNCTION</span> <span class="n">pp_json</span><span class="p">(</span><span class="n">j</span> <span class="nb">JSON</span><span class="p">,</span> <span class="n">sort_keys</span> <span class="nb">BOOLEAN</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">,</span> <span class="n">indent</span> <span class="nb">TEXT</span> <span class="o">=</span> <span class="s1">&#39;    &#39;</span><span class="p">)</span>
+<span class="k">RETURNS</span> <span class="nb">TEXT</span> <span class="k">AS</span> <span class="s">$$</span>
+<span class="s">  import simplejson as json</span>
+<span class="s">  return json.dumps(json.loads(j), sort_keys=sort_keys, indent=indent)</span>
+<span class="s">$$</span> <span class="k">LANGUAGE</span> <span class="n">PLPYTHONU</span><span class="p">;</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>This page will be expanded to include more examples of
+queries suited to the task.</p>
+<div class="section" id="simbad">
+<h3>SIMBAD<a class="headerlink" href="#simbad" title="Permalink to this headline">¶</a></h3>
+<p>Given a list of target names, not necessarily the SIMBAD <strong>main_id</strong> names,
+locate them and dig out the salient data for the bigger database. This
+produces a <strong>.raw</strong> file. The main <strong>*basic</strong> table has a <strong>iod</strong>, other
+tables link to this using the field name <strong>oidref</strong>. In the case of the
+<strong>ident</strong> table, multiple star names are tied to one <strong>oidref</strong>, which
+ties back to the other tables. It is possible to move between the
+tables using just the <strong>oidref</strong>.  Here ident is used to match the
+given target name from observer, <strong>allfluxes</strong> digs out the flux values,
+and basic provides the RA,DEC,spectral type and qualifier.</p>
+<p>First the target names are entered into a simple database, using a
+simple Comma-Separated-Value file. All that is needed is one column
+with target names that match alternate names within SIMBAD. SIMBAD is
+pretty liberal with the star names, misspellings (this example
+Betelgeuse is misspelled) but some planetarium vendors alter star names
+up with their own decisions. Leading zeros may be omitted when SIMBAD
+requires them and minus signs are changed to colons or worse. Latex
+tends to use typesetting characters in lieu of the ASCII used within
+SIMBAD.</p>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">SELECT</span>  <span class="n">ident</span><span class="mf">.</span><span class="n">oidref</span><span class="p">,</span> <span class="n">ident</span><span class="mf">.</span><span class="n">id</span><span class="p">,</span> <span class="n">basic</span><span class="mf">.</span><span class="n">otype_txt</span><span class="p">,</span>
+        <span class="n">basic</span><span class="mf">.</span><span class="n">ra</span><span class="p">,</span> <span class="n">basic</span><span class="mf">.</span><span class="k">dec</span><span class="p">,</span> <span class="n">basic</span><span class="mf">.</span><span class="n">sp_type</span><span class="p">,</span> <span class="n">basic</span><span class="mf">.</span><span class="n">sp_qual</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">U</span>   <span class="k">AS</span> <span class="s s-Name">&quot;uband&quot;</span><span class="p">,</span>   <span class="c1">-- Change filters into psql</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">B</span>   <span class="k">AS</span> <span class="s s-Name">&quot;bband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">V</span>   <span class="k">AS</span> <span class="s s-Name">&quot;vband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">R</span>   <span class="k">AS</span> <span class="s s-Name">&quot;rband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">I</span>   <span class="k">AS</span> <span class="s s-Name">&quot;iband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">J</span>   <span class="k">AS</span> <span class="s s-Name">&quot;jband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">H</span>   <span class="k">AS</span> <span class="s s-Name">&quot;hband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">K</span>   <span class="k">AS</span> <span class="s s-Name">&quot;kband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">u_</span>  <span class="k">AS</span> <span class="s s-Name">&quot;sloans_u&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">g_</span>  <span class="k">AS</span> <span class="s s-Name">&quot;sloans_g&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">r_</span>  <span class="k">AS</span> <span class="s s-Name">&quot;sloans_r&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">i_</span>  <span class="k">AS</span> <span class="s s-Name">&quot;sloans_i&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">z_</span>  <span class="k">AS</span> <span class="s s-Name">&quot;sloans_z&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">G</span>   <span class="k">AS</span> <span class="s s-Name">&quot;gaia_G&quot;</span><span class="p">,</span>
+        <span class="n">alltypes</span><span class="mf">.</span><span class="o">*</span>
+<span class="k">FROM</span> <span class="n">ident</span><span class="p">,</span> <span class="n">TAP_UPLOAD</span><span class="mf">.</span><span class="n">giventargets</span>
+<span class="k">join</span> <span class="n">allfluxes</span> <span class="k">on</span>   <span class="n">ident</span><span class="mf">.</span><span class="n">oidref</span> <span class="o">=</span> <span class="n">allfluxes</span><span class="mf">.</span><span class="n">oidref</span>
+<span class="k">join</span> <span class="n">alltypes</span>  <span class="k">on</span>   <span class="n">ident</span><span class="mf">.</span><span class="n">oidref</span> <span class="o">=</span> <span class="n">alltypes</span><span class="mf">.</span><span class="n">oidref</span>
+<span class="k">join</span> <span class="n">basic</span>     <span class="k">on</span>   <span class="n">ident</span><span class="mf">.</span><span class="n">oidref</span> <span class="o">=</span> <span class="n">basic</span><span class="mf">.</span><span class="n">oid</span>
+<span class="k">where</span> <span class="n">giventargets</span><span class="mf">.</span><span class="n">starname</span> <span class="o">=</span> <span class="n">ident</span><span class="mf">.</span><span class="n">id</span><span class="p">;</span>
+<span class="go">;</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">select</span> <span class="n">b</span><span class="mf">.</span><span class="n">id</span> <span class="k">as</span> <span class="s s-Name">&quot;Given Target&quot;</span><span class="p">,</span>
+       <span class="k">header</span> <span class="o">-&gt;</span> <span class="s1">&#39;TARGNAME&#39;</span> <span class="o">-&gt;&gt;</span> <span class="s1">&#39;value&#39;</span> <span class="k">as</span> <span class="s s-Name">&quot;NGSLNAME&quot;</span><span class="p">,</span>
+       <span class="n">fqpname</span><span class="p">,</span><span class="n">r2s</span><span class="p">(</span><span class="n">b</span><span class="mf">.</span><span class="n">ora</span><span class="p">)</span>  <span class="k">as</span> <span class="s s-Name">&quot;RA&quot;</span><span class="p">,</span>
+       <span class="n">d2s</span><span class="p">(</span><span class="n">b</span><span class="mf">.</span><span class="n">odec</span><span class="p">)</span> <span class="k">as</span> <span class="s s-Name">&quot;DEC&quot;</span>
+
+<span class="k">from</span> <span class="n">stis</span>           <span class="n">a</span>
+<span class="k">join</span> <span class="n">rawgiventargets</span> <span class="n">b</span>
+<span class="k">on</span> <span class="n">q3c_join</span><span class="p">(</span><span class="n">a</span><span class="mf">.</span><span class="n">ora</span><span class="p">,</span><span class="n">a</span><span class="mf">.</span><span class="n">odec</span><span class="p">,</span> <span class="n">b</span><span class="mf">.</span><span class="n">ora</span><span class="p">,</span><span class="n">b</span><span class="mf">.</span><span class="n">odec</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">)</span>
+<span class="k">order</span> <span class="k">by</span> <span class="p">(</span><span class="n">b</span><span class="mf">.</span><span class="n">ora</span><span class="o">::</span><span class="nb">int</span><span class="p">)</span><span class="o">/</span><span class="mf">15</span><span class="p">,</span> <span class="n">b</span><span class="mf">.</span><span class="n">odec</span>
+<span class="p">;</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span>
+</pre></div>
+</td></tr></table></div>
+<p>Some fields overlap, so another basic select is in order.
+Note: The <strong>header</strong> field is a <strong>jsonb</strong>, taken verbatim
+from the header of the original file. Thus the <strong>OBJECT</strong> field
+is <strong>TARGNAME</strong> in this case. The compound select statement:</p>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">fqpname</span> <span class="k">FROM</span> <span class="p">(</span>
+   <span class="k">SELECT</span> <span class="n">b</span><span class="mf">.</span><span class="n">id</span> <span class="k">AS</span> <span class="s s-Name">&quot;Given Target&quot;</span><span class="p">,</span>
+          <span class="k">header</span> <span class="o">-&gt;</span> <span class="s1">&#39;TARGNAME&#39;</span> <span class="o">-&gt;&gt;</span> <span class="s1">&#39;value&#39;</span> <span class="k">AS</span> <span class="s s-Name">&quot;NGSLNAME&quot;</span><span class="p">,</span>
+          <span class="n">fqpname</span><span class="p">,</span><span class="n">r2s</span><span class="p">(</span><span class="n">b</span><span class="mf">.</span><span class="n">ora</span><span class="p">)</span>               <span class="k">AS</span> <span class="s s-Name">&quot;RA&quot;</span><span class="p">,</span>
+          <span class="n">d2s</span><span class="p">(</span><span class="n">b</span><span class="mf">.</span><span class="n">odec</span><span class="p">)</span>                      <span class="k">AS</span> <span class="s s-Name">&quot;DEC&quot;</span>
+
+   <span class="k">FROM</span> <span class="n">stis</span>           <span class="n">a</span>
+   <span class="k">JOIN</span> <span class="n">rawgiventargets</span> <span class="n">b</span>
+   <span class="k">ON</span> <span class="n">q3c_join</span><span class="p">(</span><span class="n">a</span><span class="mf">.</span><span class="n">ora</span><span class="p">,</span><span class="n">a</span><span class="mf">.</span><span class="n">odec</span><span class="p">,</span> <span class="n">b</span><span class="mf">.</span><span class="n">ora</span><span class="p">,</span><span class="n">b</span><span class="mf">.</span><span class="n">odec</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">)</span>
+   <span class="k">ORDER</span> <span class="k">BY</span> <span class="p">(</span><span class="n">b</span><span class="mf">.</span><span class="n">ora</span><span class="o">::</span><span class="nb">int</span><span class="p">)</span><span class="o">/</span><span class="mf">15</span><span class="p">,</span> <span class="n">b</span><span class="mf">.</span><span class="n">odec</span> <span class="p">)</span> <span class="n">xx</span>
+<span class="p">;</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">COPY</span> <span class="p">(</span>
+   <span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="s s-Name">&quot;NGSLNAME&quot;</span><span class="p">,</span> <span class="s s-Name">&quot;TargName&quot;</span><span class="p">,</span> <span class="s s-Name">&quot;NGSLFile&quot;</span><span class="p">,</span>
+          <span class="s s-Name">&quot;RA&quot;</span><span class="p">,</span> <span class="s s-Name">&quot;DEC&quot;</span><span class="p">,</span> <span class="s s-Name">&quot;VMag&quot;</span><span class="p">,</span> <span class="s s-Name">&quot;SPType&quot;</span> <span class="p">,</span> <span class="s s-Name">&quot;SPQual&quot;</span> <span class="k">FROM</span> <span class="p">(</span>
+   <span class="k">SELECT</span> <span class="n">b</span><span class="mf">.</span><span class="n">id</span>                             <span class="k">AS</span> <span class="s s-Name">&quot;Given Target&quot;</span><span class="p">,</span>
+          <span class="n">b</span><span class="mf">.</span><span class="n">v</span><span class="o">::</span><span class="nb">numeric</span><span class="p">(</span><span class="mf">7</span><span class="p">,</span><span class="mf">3</span><span class="p">)</span>                <span class="k">AS</span> <span class="s s-Name">&quot;VMag&quot;</span><span class="p">,</span>
+          <span class="n">b</span><span class="mf">.</span><span class="n">sp_type</span>                        <span class="k">AS</span> <span class="s s-Name">&quot;SPType&quot;</span><span class="p">,</span>
+          <span class="n">b</span><span class="mf">.</span><span class="n">sp_qual</span>                        <span class="k">AS</span> <span class="s s-Name">&quot;SPQual&quot;</span><span class="p">,</span>
+          <span class="n">b</span><span class="mf">.</span><span class="n">id</span>                             <span class="k">AS</span> <span class="s s-Name">&quot;TargName&quot;</span><span class="p">,</span>
+          <span class="k">header</span> <span class="o">-&gt;</span> <span class="s1">&#39;TARGNAME&#39;</span> <span class="o">-&gt;&gt;</span> <span class="s1">&#39;value&#39;</span> <span class="k">AS</span> <span class="s s-Name">&quot;NGSLNAME&quot;</span><span class="p">,</span>
+          <span class="n">fqpname</span>                          <span class="k">AS</span> <span class="s s-Name">&quot;NGSLFile&quot;</span><span class="p">,</span>
+          <span class="n">r2s</span><span class="p">(</span><span class="n">b</span><span class="mf">.</span><span class="n">ora</span><span class="p">)</span>                       <span class="k">AS</span> <span class="s s-Name">&quot;RA&quot;</span><span class="p">,</span>
+          <span class="n">d2s</span><span class="p">(</span><span class="n">b</span><span class="mf">.</span><span class="n">odec</span><span class="p">)</span>                      <span class="k">AS</span> <span class="s s-Name">&quot;DEC&quot;</span>
+
+   <span class="k">FROM</span> <span class="n">stis</span>           <span class="n">a</span>
+   <span class="k">JOIN</span> <span class="n">rawtonytargets</span> <span class="n">b</span>
+   <span class="k">ON</span> <span class="n">q3c_join</span><span class="p">(</span><span class="n">a</span><span class="mf">.</span><span class="n">ora</span><span class="p">,</span><span class="n">a</span><span class="mf">.</span><span class="n">odec</span><span class="p">,</span> <span class="n">b</span><span class="mf">.</span><span class="n">ora</span><span class="p">,</span><span class="n">b</span><span class="mf">.</span><span class="n">odec</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">)</span>
+   <span class="k">ORDER</span> <span class="k">BY</span> <span class="p">(</span><span class="n">b</span><span class="mf">.</span><span class="n">ora</span><span class="o">::</span><span class="nb">int</span><span class="p">)</span><span class="o">/</span><span class="mf">15</span><span class="p">,</span> <span class="n">b</span><span class="mf">.</span><span class="n">odec</span> <span class="p">)</span> <span class="n">xx</span>
+ <span class="p">)</span>
+ <span class="k">TO</span> <span class="s1">&#39;/tmp/tony2csv.csv&#39;</span> <span class="k">WITH</span> <span class="k">CSV</span> <span class="k">HEADER</span> <span class="k">DELIMITER</span> <span class="s1">&#39;,&#39;</span>
+<span class="p">;</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span>
+</pre></div>
+</td></tr></table></div>
+<p>! sudo rm  /tmp/tonycsv.csv
+COPY (</p>
+<blockquote>
+<div><dl>
+<dt>SELECT DISTINCT “TargName”, “REF_NAME”, fqpname,</dt><dd><p>“REF_RA”, “REF_DEC”, “VMag”,
+“SPType” , “SPQual”</p>
+</dd>
+<dt>FROM (</dt><dd><dl class="simple">
+<dt>SELECT b.id                             AS “Given Target”,</dt><dd><p>b.v::numeric(7,3)                AS “VMag”,
+b.sp_type                        AS “SPType”,
+b.sp_qual                        AS “SPQual”,
+b.id                             AS “TargName”,
+header -&gt; ‘TARGNAME’ -&gt;&gt; ‘value’ AS “REF_NAME”,
+fqpname,r2s(b.ora)               AS “REF_RA”,
+d2s(b.odec)                      AS “REF_DEC”</p>
+</dd>
+</dl>
+<p>FROM stis           a
+JOIN rawtonytargets b
+ON q3c_join(a.ora,a.odec, b.ora,b.odec, 10.0)
+ORDER BY “TargName”,(b.ora::int)/15, b.odec
+) xx</p>
+</dd>
+<dt>– limit 10</dt><dd><p>)
+TO ‘/tmp/tonycsv.csv’ WITH CSV HEADER DELIMITER ‘,’
+;</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>The original list from a email was used to produce, by hand and editor
+a simple list. The gratitious column about the payload was added. This
+is then <strong>Load -&gt; table</strong> <strong>database</strong> into TOPCAT extended with the
+proper jdbc package. PostgreSQL is used:</p>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">DROP</span> <span class="k">TABLE</span>    <span class="k">IF</span> <span class="k">EXISTS</span> <span class="n">giventargets</span><span class="p">;</span>
+<span class="go">DROP SEQUENCE IF EXISTS giventargets_sequence;</span>
+<span class="go">CREATE SEQUENCE         giventargets_sequence START 100000;</span>
+
+<span class="go">CREATE TABLE giventargets (</span>
+<span class="go">   uniqueid  integer PRIMARY KEY DEFAULT nextval(&#39;giventargets_sequence&#39;),</span>
+<span class="go">   starname  text,</span>
+<span class="go">   program   text</span>
+<span class="go">);</span>
+
+<span class="go">insert into giventargets (starname,program ) values</span>
+<span class="go">   (&#39;HD 123299&#39;      ,  &#39;Lowspec3 Miles&#39;  ),</span>
+<span class="go">   (&#39;HD 142373&#39;      ,  &#39;Lowspec3 Miles&#39;  ),</span>
+<span class="go">   (&#39;HD 142908&#39;      ,  &#39;Lowspec3 Miles&#39;  ),</span>
+<span class="go">   (&#39;HD 155763&#39;      ,  &#39;Lowspec3 Miles&#39;  ),</span>
+<span class="go">   (&#39;HD 164058&#39;      ,  &#39;Lowspec3 Miles&#39;  ),</span>
+<span class="go">   (&#39;HD 160762&#39;      ,  &#39;Lowspec3 Miles&#39;  ),</span>
+<span class="go">   (&#39;HIP 66700&#39;      ,  &#39;Lowspec3 target&#39; ),</span>
+<span class="go">   (&#39;HD 108907&#39;      ,  &#39;Lowspec3 target&#39; ),</span>
+<span class="go">   (&#39;HD 142926&#39;      ,  &#39;Lowspec3 target&#39; ),</span>
+<span class="go">   (&#39;HD 138629&#39;      ,  &#39;Lowspec3 target&#39; ),</span>
+<span class="go">   (&#39;HIP 95413&#39;      ,  &#39;Lowspec3 target&#39; ),</span>
+<span class="go">   (&#39;HD 166014&#39;      ,  &#39;Lowspec3 target&#39; ),</span>
+<span class="go">   (&#39;HD 145976&#39;      ,  &#39;UVEX3 Miles&#39;     ),</span>
+<span class="go">   (&#39;HD 038545&#39;      ,  &#39;UVEX3 Miles&#39;     ),</span>
+<span class="go">   (&#39;HD 142373&#39;      ,  &#39;UVEX3 Miles&#39;     ),</span>
+<span class="go">   (&#39;HD 142807&#39;      ,  &#39;UVEX3 Miles&#39;     ),</span>
+<span class="go">   (&#39;4Her&#39;           ,  &#39;UVEX3 target&#39;    ),</span>
+<span class="go">   (&#39;Betelgeuse&#39;     ,  &#39;UVEX3 target&#39;    ),</span>
+<span class="go">   (&#39;Procyon&#39;        ,  &#39;UVEX3 target&#39;    ),</span>
+<span class="go">   (&#39;tetCrB&#39;         ,  &#39;UVEX3 target&#39;    ),</span>
+<span class="go">   (&#39;HD 155763&#39;      ,  &#39;Tragos3 Miles&#39;   ),</span>
+<span class="go">   (&#39;HD 142373&#39;      ,  &#39;Tragos3 Miles&#39;   ),</span>
+<span class="go">   (&#39;HD 136064&#39;      ,  &#39;Tragos3 Miles&#39;   ),</span>
+<span class="go">   (&#39;eta Dra&#39;        ,  &#39;Tragos3 target&#39;  ),</span>
+<span class="go">   (&#39;4 Her&#39;          ,  &#39;Tragos3 target&#39;  ),</span>
+<span class="go">   (&#39;53 Boo&#39;         ,  &#39;Tragos3 target&#39;  ),</span>
+<span class="go">   (&#39;AGDra&#39;          ,  &#39;Tragos3 target&#39;  );</span>
+</pre></div>
+</td></tr></table></div>
+<p>The <strong>giventargets</strong> from the database is converted to a <strong>CSV</strong>
+file in the <strong>/tmp</strong> directory</p>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">COPY</span> <span class="p">(</span><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">giventargets</span><span class="p">)</span>
+<span class="k">TO</span> <span class="s1">&#39;/tmp/giventargets.csv&#39;</span>
+<span class="k">WITH</span>  <span class="k">CSV</span> <span class="k">HEADER</span> <span class="k">DELIMITER</span> <span class="s1">&#39;,&#39;</span><span class="p">;</span>
+</pre></div>
+</td></tr></table></div>
+<p>Within the TOPCAT ‘Load -&gt; table’ using the database, the query is:</p>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">giventargets</span><span class="p">;</span>
+</pre></div>
+</td></tr></table></div>
+<p>Rename the select table name to <strong>giventargets</strong>. Then use
+** File -&gt; Load Table -&gt; Select from** and into the <strong>Keywords</strong>
+field enter “<strong>SIMBAD TAP</strong>”, select it from the “Selected Tap Services”
+and hit the <strong>Use Service</strong> button at bottom. It will fetch the
+meta-data available.</p>
+<div class="highlight-psql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">SELECT</span>  <span class="n">ident</span><span class="mf">.</span><span class="n">oidref</span><span class="p">,</span> <span class="n">ident</span><span class="mf">.</span><span class="n">id</span><span class="p">,</span> <span class="n">basic</span><span class="mf">.</span><span class="n">otype_txt</span><span class="p">,</span>
+        <span class="n">basic</span><span class="mf">.</span><span class="n">ra</span><span class="p">,</span> <span class="n">basic</span><span class="mf">.</span><span class="k">dec</span><span class="p">,</span> <span class="n">basic</span><span class="mf">.</span><span class="n">sp_type</span><span class="p">,</span> <span class="n">basic</span><span class="mf">.</span><span class="n">sp_qual</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">U</span>   <span class="k">AS</span> <span class="s s-Name">&quot;uband&quot;</span><span class="p">,</span>   <span class="c1">-- Change filters into psql</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">B</span>   <span class="k">AS</span> <span class="s s-Name">&quot;bband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">V</span>   <span class="k">AS</span> <span class="s s-Name">&quot;vband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">R</span>   <span class="k">AS</span> <span class="s s-Name">&quot;rband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">I</span>   <span class="k">AS</span> <span class="s s-Name">&quot;iband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">J</span>   <span class="k">AS</span> <span class="s s-Name">&quot;jband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">H</span>   <span class="k">AS</span> <span class="s s-Name">&quot;hband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">K</span>   <span class="k">AS</span> <span class="s s-Name">&quot;kband&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">u_</span>  <span class="k">AS</span> <span class="s s-Name">&quot;sloans_u&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">g_</span>  <span class="k">AS</span> <span class="s s-Name">&quot;sloans_g&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">r_</span>  <span class="k">AS</span> <span class="s s-Name">&quot;sloans_r&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">i_</span>  <span class="k">AS</span> <span class="s s-Name">&quot;sloans_i&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">z_</span>  <span class="k">AS</span> <span class="s s-Name">&quot;sloans_z&quot;</span><span class="p">,</span>
+        <span class="n">allfluxes</span><span class="mf">.</span><span class="n">G</span>   <span class="k">AS</span> <span class="s s-Name">&quot;gaia_G&quot;</span><span class="p">,</span>
+        <span class="n">alltypes</span><span class="mf">.</span><span class="o">*</span>
+<span class="k">FROM</span> <span class="n">ident</span><span class="p">,</span> <span class="n">TAP_UPLOAD</span><span class="mf">.</span><span class="n">giventargets</span>
+<span class="k">join</span> <span class="n">allfluxes</span> <span class="k">on</span>   <span class="n">ident</span><span class="mf">.</span><span class="n">oidref</span> <span class="o">=</span> <span class="n">allfluxes</span><span class="mf">.</span><span class="n">oidref</span>
+<span class="k">join</span> <span class="n">alltypes</span>  <span class="k">on</span>   <span class="n">ident</span><span class="mf">.</span><span class="n">oidref</span> <span class="o">=</span> <span class="n">alltypes</span><span class="mf">.</span><span class="n">oidref</span>
+<span class="k">join</span> <span class="n">basic</span>     <span class="k">on</span>   <span class="n">ident</span><span class="mf">.</span><span class="n">oidref</span> <span class="o">=</span> <span class="n">basic</span><span class="mf">.</span><span class="n">oid</span>
+<span class="k">where</span> <span class="n">giventargets</span><span class="mf">.</span><span class="n">starname</span> <span class="o">=</span> <span class="n">ident</span><span class="mf">.</span><span class="n">id</span><span class="p">;</span>
+<span class="go">;</span>
+</pre></div>
+</td></tr></table></div>
+<p>This appears as a rather complicated name in the <strong>Table list</strong> of
+TOPCAT. The table name can then be changed to something easy to type
+for an <strong>UPLOAD</strong> key for joins using the TOPCAT TAP interface to the
+SIMBAD service.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Astrophysics.html" class="btn btn-neutral float-right" title="Astrophysics Crib Sheet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="license.html" class="btn btn-neutral float-left" title="NGSL Small Telescope Spectral Reference Resources License" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Wayne Green, Anthony Rodda, Clarke Yeager
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
